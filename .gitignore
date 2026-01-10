@@ -1,0 +1,24 @@
+# 忽略所有内容
+*
+*/
+
+# 只保留 Code 文件夹及其内容
+!Code/
+!Code/**
+
+# 保留配置文件
+!.gitignore
+!README.md
+
+# 保留空文件夹结构（通过 .gitkeep）
+!.gitkeep
+!Dataset/.gitkeep
+!Rawdata/.gitkeep
+!Model/.gitkeep
+!Paper/.gitkeep
+!TeachFile/.gitkeep
+
+# Code 文件夹内的 Python 缓存仍然忽略
+Code/__pycache__/
+Code/**/__pycache__/
+Code/**/*.pyc

@@ -319,8 +319,8 @@ if __name__ == "__main__":
     elif Select_TYPE == 'SE':
         # 使用SE数据集生成器
         generator = SEDatasetGenerator(
-            base_dir=r"/home/angela/Motor_Fault_Detect/Rawdata/Southeast/bearingset/ball_2",
-            save_dir=r"/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset",
+            base_dir=r"/home/angela/Motor_Fault_Detect/Rawdata/Southeast/gearset",
+            save_dir=r"/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/gearset",
             window_size=512,
             overlap_ratio=0.5,
             wavename='cmor1-1',
@@ -329,4 +329,4 @@ if __name__ == "__main__":
             skiprows=16
         )
         # 生成完整数据集，如果只想测试，可以设置 max_samples_per_class=100
-        generator.build_dataset(max_samples_per_class=None)
+        generator.build_dataset(max_samples_per_class=100)

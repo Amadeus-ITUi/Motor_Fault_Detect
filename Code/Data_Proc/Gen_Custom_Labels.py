@@ -13,11 +13,15 @@ LABEL_CONFIG = [
     (2, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/outer_20_0/motor", "outer_20_0"),
     (3, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/inner_20_0/motor", "inner_20_0"),
     (4, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/health_20_0/motor", "health_20_0"),
-    
+    (5, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/ball_30_2/motor", "ball_30_2"),
+    (6, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/comb_30_2/motor", "comb_30_2"),
+    (7, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/outer_30_2/motor", "outer_30_2"),
+    (8, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/inner_30_2/motor", "inner_30_2"),
+    (9, "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/health_30_2/motor", "health_30_2"),
 ]
 
 # 输出的文件名
-OUTPUT_CSV = "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/labels_motor_20_0.csv"
+OUTPUT_CSV = "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/labels_bearingset_motor.csv"
 # ========================================================
 
 class CustomLabelGenerator:

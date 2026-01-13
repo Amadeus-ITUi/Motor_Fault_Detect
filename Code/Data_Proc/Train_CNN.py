@@ -10,7 +10,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # 1. 基础配置
-CSV_PATH = "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/labels_motor_20_0.csv"
+CSV_PATH = "/home/angela/Motor_Fault_Detect/Dataset/SE_CWT_Dataset(sample=all)/bearingset/labels_bearingset_motor.csv"
 MODEL_PATH = "/home/angela/Motor_Fault_Detect/Model"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 BATCH_SIZE = 32
@@ -132,7 +132,7 @@ def train_model():
         print(f"Epoch [{epoch+1}/{EPOCHS}], Loss: {avg_loss:.4f}, Val Acc: {acc:.2f}%")
 
     # F. 保存模型   
-    file_dir = os.path.join(MODEL_PATH, "SE/bearing_motor_20_0")
+    file_dir = os.path.join(MODEL_PATH, "SE/bearing_motor_all")
     if not os.path.exists(file_dir):
         os.makedirs(file_dir)
     save_path = os.path.join(file_dir, "bearing_fault_cnn.pth")
